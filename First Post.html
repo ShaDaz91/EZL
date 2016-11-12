@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>GSL News</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script>
+        $(document).ready(function () {
+            size_li = $("#myList li").size();
+            x=3;
+            $('#myList li:lt('+x+')').show();
+            $('#loadMore').click(function () {
+                x= (x+1 <= size_li) ? x+1 : size_li;
+                $('#myList li:lt('+x+')').show();
+            });
+            $('#showLess').click(function () {
+                x=(x-1<0) ? 1 : x-1;
+                $('#myList li').not(':lt('+x+')').hide();
+            });
+        });
+    </script>
+</head>
+<body>
+<!-- header -->
+<nav class="navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">GankStars League</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="News.html">News</a></li>
+        <li><a href="Stats.html">Stats</a></li>
+        <li><a href="Standings.html">Standings</a></li>
+        <li><a href="Scoreboard.html">Scoreboard</a></li>
+        <li><a href="Schedule.html">Schedule</a></li>
+        <li><a href="Divisions.html">Divisons</a></li>
+        <li><a href="Apply.html">Apply</a></li>
+	<li><a href="Tutoring.html">Tutoring</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Shop.html">Shop</a></li>
+        <li><a href="Sponsors.html">Sponsors</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">GSL News</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right bottomNav">
+        <li><a href="News.html">Home</a></li>
+	<li><a href="Vainglory News.html">Vainglory</a></li>
+	<li class="active"><a href="Archives.html">Archives</a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>  
+	
+<div class="jumbotron text-center">
+  <h1>GSL News</h1>
+  <p>Below you will find updated news related to the GankStars League. The reporters will be writing amazing articles regarding every division, game, updates, and much more for the GSL.</p>
+</div>
+
+
+
+<!-- header -->
+	<div class="details">
+		<div class="container">
+			<div class="det_pic">
+				  <img src="GS Ground.png" class="img-responsive" alt="">
+			</div>
+			<div class="det_text">
+				<p><p>The applications have been opened!</p>
+            <hr>
+            <p>Come apply to be a part of the GSL as a member, captain, or have a position in the GSL at <a href="Apply">Apply</a>. This will send in an application to the admins who will respond as quickly as possible. If you have not recieved a reply in 24 hours, please contact Skillz4Killz at <a href="http://band.us/#!/band/63193021" target="_blank" width="35" height="35">Contact</a></p>
+            <br>
+              <br>
+            <blockquote>
+              <p>Rank, skill, fame, status, all that is irrelevant.   <strong>Focus on making relationships</strong>- those are what is really important and they last longer than anything else.</p>
+            </blockquote>
+            <br>
+              <br>
+            <p>Although applications are open they will only be open for a limited time. Eventually applications will be closed and the date of closing will be announced in advance. However, it is important to keep in mind that the first applications will most obviously recieve the first attentions, so if you are hoping to recieve a position in the GSL, make sure to apply as soon as possible. 
+              <br>
+              <br>
+              Furthermore, It is important to keep in mind that once the applications close, is 3 days before Draft Day. This is done to make sure that there are no last minute surprises applicants for the GankStars League, and allows every captain to have a fair amount of time to review and scout each and every applicant. Once the applications close, they will not be opened again, until the Draft is complete. 
+              <br>
+              <br>
+              Afterwards the applications will once again be opened so that we may have anyone wishing to apply to the second season will be able to. Furthermore, once the season starts these applicants who applied late will become the free agent pool for the first season. This means that when a team needs a player due to an unfortunate reason confirmed by an admin, they will be able to recruit a player from the free agent pool.</p>
+			</div>
+			<ul class="links">
+				  		 <li><i class="date"> </i><span class="icon_text">November 15, 2016</span></li>
+				  		 <li><a href="Skillz4Killz.html"><i class="admin"> </i><span class="icon_text">Skillz4Killz</span></a></li>
+				  		 <li class="last"><a href="First Post.html"><i class="permalink"> </i><span class="icon_text">Permalink</span></a></li>
+				    </ul>
+					<ul class="links_middle">
+			  		     <li><a href="#"><i class="title-icon"> </i><span class="icon_text">Applications Are Open</span></a></li>
+				  		 <li><i class="tags"> </i><span class="icon_text">Vainglory, November, First, Applications, GSL</span></li>
+		  		    </ul>
+					<ul class="links_bottom">
+		  		    	<li><a href="#"><i class="comments"> </i><span class="icon_text">1 Comments</span></a></li>
+			  			<li><i class="views"> </i><span class="icon_text">0</span></li>
+			  			<li><i class="likes"> </i><span class="icon_text">0</span></li>
+		  		    </ul>
+			 <div class="comments1">
+								<h4>COMMENTS</h4>
+			  				<div class="comments-main">
+									<div class="col-md-2 cmts-main-left">
+										<img src="images/avatar.png" alt="">
+									</div>
+									<div class="col-md-10 cmts-main-right">
+										<h5>TEST COMMENT</h5>
+										<p>TEST TEST</p>
+										<div class="cmts">
+											<div class="cmnts-left">
+												<p>On October 17, 2016, 18:01</p>
+											</div>
+											<div class="cmnts-right">
+												<a href="First Post.html" target="commentform">Reply</a>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+			  				</div>
+			<div class="lev">
+			<div class="leave">
+				<h4>Leave a comment</h4>
+				</div>
+				<form id="commentform">
+				    <label for="author">Name</label>
+						<input id="author" name="author" type="text" value="" size="30" aria-required="true">
+						<label for="email">Email</label>
+						<input id="email" name="email" type="text" value="" size="30" aria-required="false">
+						<label for="comment">Comment</label>
+						<textarea></textarea>
+					 <div class="clearfix"></div>
+			           <input name="submit" type="submit" id="submit" value="Send">
+					<div class="clearfix"></div>
+				   </form>
+				  </div>
+				  
+		</div>
+	</div>
+	
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-3 copy">
+				<div class="top1">
+					<i class="ham"></i>
+				</div>
+				<div class="top2">
+					<h6>&copy; GankStars Esports, LLC</h6>
+					<p>All rights reserved</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-3 copy">
+				<div class="top1">
+					<i class="men"></i>
+				</div>
+				<div class="top2">
+					<h6>Template by: </h6>
+					<p><a href="http://w3layouts.com/">W3layouts</a></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-3 copy">
+				<div class="top1">
+					<i class="app"></i>
+				</div>
+				<div class="top2">
+					<h6>Contact: </h6>
+					<p>Tel: 800-555-5555</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-3 copy">
+				<div class="top1">
+					<i class="lik"></i>
+				</div>
+				<div class="top2">
+					<h6>Follow us at: </h6>
+					<p><a href="http://band.us/#!/band/63193021" target="_blank"><img src="Band_Button.png" width="35" height="35"></a>
+        <a href="https://twitter.com/gankstars" target="_blank"><img src="Twitter-Logo.png" width="35" height="35"></a>
+        <a href="#">Back to top</a></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- footer -->
+</body>
+</html>

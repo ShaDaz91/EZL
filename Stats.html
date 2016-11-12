@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GSL Stats</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="Apply.css" />
+  <script src='Apply.js'></script>
+  </head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">GankStars League</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="News.html">News</a></li>
+        <li class="active"><a href="Stats.html">Stats</a></li>
+        <li><a href="Standings.html">Standings</a></li>
+         <li><a href="Scoreboard.html">Scoreboard</a></li>
+        <li><a href="Schedule.html">Schedule</a></li>
+        <li><a href="Divisions.html">Divisons</a></li>
+        <li><a href="Apply.html">Apply</a></li>
+	<li><a href="Tutoring.html">Tutoring</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Shop.html">Shop</a></li>
+        <li><a href="Sponsors.html">Sponsors</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">GankStars League</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right bottomNav">
+         <li><a href="#Stats">Stats</a></li>
+        <li><a href="#Top5">Top 5</a></li>
+        <li><a href="#Top5Laners">Top 5 Laners</a></li>
+        <li><a href="#Top5Junglers">Top 5 Junglers</a></li>
+        <li><a href="#Top5Roamers">Top 5 Roamers</a></li>
+        
+      </ul>
+    </div>
+  </div>
+  </nav> 
+
+<div class="jumbotron text-center" id="Stats">
+  <h1>GankStars League Statistics</h1>
+  <p>Below you will find all the stats of every player in the league. There will be Top 5 Players per week and Top 5 Players in each position in each division of the GankStars League.</p>
+</div>
+  <h2 style='text-align: center; color: black;' class="slideanim well well-lg fadeInDown" id="Top5">Top 5</h2>
+  
+<div class="container slideanim" style="max-width: 100%;">
+  <div class="row">
+    <div class="span12" >
+      <div class="menu" >
+        <div class="accordion" >
+          <div class="accordion-group" style="margin: 0 auto;">
+            <div class="accordion-heading country" style="display: inline-block; padding: 0px 25px; font-size: 20px;">
+              <a class="accordion-toggle" data-toggle="collapse" href="#Week1">Week 1</a>
+            </div>
+              <div id="Week1" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <table class="table table-striped table-condensed" style="text-align: center;">
+                    <thead>
+                      <tr>
+                        <th style="text-align: center;">IGN</th>
+                        <th style="text-align: center;">Points</th>
+                      </tr>
+                    </thead>   
+                    <tbody>
+                      <tr>
+                        <td>Player 1</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Player 2</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Player 3</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Player 4</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Player 5</td>
+                        <td>0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="accordion-heading country" style="display: inline-block; padding: 0px 25px; font-size: 20px;">
+                <a class="accordion-toggle" data-toggle="collapse" href="#Week2">Week 2</a>
+              </div>
+              <div id="Week2" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <table class="table table-striped table-condensed" style="text-align: center;">
+                    <thead>
+                      <tr>
+                        <th style="text-align: center;">IGN</th>
+                        <th style="text-align: center;">Points</th>
+                      </tr>
+                    </thead>   
+                    <tbody>
+                      <tr>
+                        <td>Player 1</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Player 2</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Player 3</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Player 4</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Player 5</td>
+                        <td>0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="accordion-heading country" style="display: inline-block; padding: 0px 10px; font-size: 20px;">
+                    <a class="accordion-toggle" data-toggle="collapse" href="#Week3">Week 3</a>
+                  </div>
+                  <div id="Week3" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <table class="table table-striped table-condensed" style="text-align: center;">
+                        <thead>
+                          <tr>
+                            <th style="text-align: center;">IGN</th>
+                            <th style="text-align: center;">Points</th>
+                          </tr>
+                        </thead>   
+                        <tbody>
+                          <tr>
+                            <td>Player 1</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 2</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 3</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 4</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 5</td>
+                            <td>0</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+ 
+                  <div class="accordion-heading country" style="display: inline-block; padding: 0px 10px; font-size: 20px;">
+                    <a class="accordion-toggle" data-toggle="collapse" href="#Week4">Week 4</a>
+                  </div>
+                  <div id="Week4" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <table class="table table-striped table-condensed" style="text-align: center;">
+                        <thead>
+                          <tr>
+                            <th style="text-align: center;">IGN</th>
+                            <th style="text-align: center;">Points</th>
+                          </tr>
+                        </thead>   
+                        <tbody>
+                          <tr>
+                            <td>Player 1</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 2</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 3</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 4</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 5</td>
+                            <td>0</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="accordion-heading country" style="display: inline-block; padding: 0px 10px; font-size: 20px;">
+                    <a class="accordion-toggle" data-toggle="collapse" href="#Week5">Week 5</a>
+                  </div>
+                  <div id="Week5" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <table class="table table-striped table-condensed" style="text-align: center;">
+                        <thead>
+                          <tr>
+                            <th style="text-align: center;">IGN</th>
+                            <th style="text-align: center;">Points</th>
+                          </tr>
+                        </thead>   
+                        <tbody>
+                          <tr>
+                            <td>Player 1</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 2</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 3</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 4</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 5</td>
+                            <td>0</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="accordion-heading country" style="display: inline-block; padding: 0px 10px; font-size: 20px;">
+                    <a class="accordion-toggle" data-toggle="collapse" href="#Week6">Week 6</a>
+                  </div>
+                  <div id="Week6" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <table class="table table-striped table-condensed" style="text-align: center;">
+                        <thead>
+                          <tr>
+                            <th style="text-align: center;">IGN</th>
+                            <th style="text-align: center;">Points</th>
+                          </tr>
+                        </thead>   
+                        <tbody>
+                          <tr>
+                            <td>Player 1</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 2</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 3</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 4</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 5</td>
+                            <td>0</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="accordion-heading country" style="display: inline-block; padding: 0px 10px; font-size: 20px;">
+                    <a class="accordion-toggle" data-toggle="collapse" href="#Week7">Week 7</a>
+                  </div>
+                  <div id="Week7" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <table class="table table-striped table-condensed" style="text-align: center;">
+                        <thead>
+                          <tr>
+                            <th style="text-align: center;">IGN</th>
+                            <th style="text-align: center;">Points</th>
+                          </tr>
+                        </thead>   
+                        <tbody>
+                          <tr>
+                            <td>Player 1</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 2</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 3</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 4</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 5</td>
+                            <td>0</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="accordion-heading country" style="display: inline-block; padding: 0px 10px; font-size: 20px;">
+                    <a class="accordion-toggle" data-toggle="collapse" href="#Playoffs1">Playoffs 1</a>
+                  </div>
+                  <div id="Playoffs1" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <table class="table table-striped table-condensed" style="text-align: center;">
+                        <thead>
+                          <tr>
+                            <th style="text-align: center;">IGN</th>
+                            <th style="text-align: center;">Points</th>
+                          </tr>
+                        </thead>   
+                        <tbody>
+                          <tr>
+                            <td>Player 1</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 2</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 3</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 4</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 5</td>
+                            <td>0</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="accordion-heading country" style="display: inline-block; padding: 0px 10px; font-size: 20px;">
+                    <a class="accordion-toggle" data-toggle="collapse" href="#Playoffs2">Playoffs 2</a>
+                  </div>
+                  <div id="Playoffs2" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <table class="table table-striped table-condensed" style="text-align: center;">
+                        <thead>
+                          <tr>
+                            <th style="text-align: center;">IGN</th>
+                            <th style="text-align: center;">Points</th>
+                          </tr>
+                        </thead>   
+                        <tbody>
+                          <tr>
+                            <td>Player 1</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 2</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 3</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 4</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 5</td>
+                            <td>0</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="accordion-heading country" style="display: inline-block; padding: 0px 10px; font-size: 20px;">
+                    <a class="accordion-toggle" data-toggle="collapse" href="#Overall">Overall</a>
+                  </div>
+                  <div id="Overall" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <table class="table table-striped table-condensed" style="text-align: center;">
+                        <thead>
+                          <tr>
+                            <th style="text-align: center;">IGN</th>
+                            <th style="text-align: center;">Points</th>
+                          </tr>
+                        </thead>   
+                        <tbody>
+                          <tr>
+                            <td>Player 1</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 2</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 3</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 4</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Player 5</td>
+                            <td>0</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div> 
+	
+	
+  <h2 style='text-align: center; color: black;' class="slideanim well well-lg fadeInDown" id="Top5Laners">Top 5 Laners</h2>
+ <table class="table table-bordered table-hover table-responsive" style="text-align: center; color: black;">
+    <thead>
+    <tr>
+      <th colspan="6" class="active" style="text-align: center;"><b>Top 5 Laners</b></th>
+    </tr>
+      <tr class="active">
+        <th style="text-align: center;"><b>IGN</b></th>
+    <th style="text-align: center;"><b>Kills</b></th>
+    <th style="text-align: center;"><b>Deaths</b></th>
+    <th style="text-align: center;"><b>Assists</b></th>
+    <th style="text-align: center;"><b>Creep Score</b></th>
+    <th style="text-align: center;"><b>Points</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="active">
+        <td><b>0</b></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+      </tr>
+      <tr class="active">
+        <td><b>0</b></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+      </tr>
+      <tr class="active">
+       <td><b>0</b></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+      </tr>
+        <tr class="active">
+       <td><b>0</b></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+      </tr>
+      <tr class="active">
+      <td><b>0</b></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+      </tr>
+      <tr class="active">
+       <td><b>0</b></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<hr>
+  <h2 style='text-align: center; color: black;' class="slideanim well well-lg fadeInDown" id="Top5Junglers">Top 5 Junglers</h2>
+ <table class="table table-bordered table-hover table-responsive" style="text-align: center; color: black;">
+    <thead>
+    <tr>
+      <th colspan="6" class="active" style="text-align: center;"><b>Top 5 Junglers</b></th>
+    </tr>
+      <tr class="active">
+        <th style="text-align: center;"><b>IGN</b></th>
+    <th style="text-align: center;"><b>Kills</b></th>
+    <th style="text-align: center;"><b>Deaths</b></th>
+    <th style="text-align: center;"><b>Assists</b></th>
+    <th style="text-align: center;"><b>Creep Score</b></th>
+    <th style="text-align: center;"><b>Points</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="active">
+        <td><b>0</b></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+      </tr>
+      <tr class="active">
+        <td><b>0</b></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+      </tr>
+      <tr class="active">
+       <td><b>0</b></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+      </tr>
+        <tr class="active">
+       <td><b>0</b></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+      </tr>
+      <tr class="active">
+      <td><b>0</b></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+      </tr>
+      <tr class="active">
+       <td><b>0</b></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+	  <h2 style='text-align: center; color: black;' class="slideanim well well-lg fadeInDown" id="Top5Roamers">Top 5 Roamers</h2>
+  <table class="table table-bordered table-hover table-responsive" style="text-align: center; color: black;">
+    <thead>
+    <tr>
+      <th colspan="6" class="active" style="text-align: center;"><b>Top 5 Roamers</b></th>
+    </tr>
+      <tr class="active">
+        <th style="text-align: center;"><b>IGN</b></th>
+    <th style="text-align: center;"><b>Kills</b></th>
+    <th style="text-align: center;"><b>Deaths</b></th>
+    <th style="text-align: center;"><b>Assists</b></th>
+    <th style="text-align: center;"><b>Creep Score</b></th>
+    <th style="text-align: center;"><b>Points</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="active">
+        <td><b>0</b></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+      </tr>
+      <tr class="active">
+        <td><b>0</b></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+      </tr>
+      <tr class="active">
+       <td><b>0</b></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+      </tr>
+        <tr class="active">
+       <td><b>0</b></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+      </tr>
+      <tr class="active">
+      <td><b>0</b></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+      </tr>
+      <tr class="active">
+       <td><b>0</b></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+      </tr>
+    </tbody>
+  </table>
+	
+<hr>
+
+<footer>
+  
+  <div class='footer'>
+    <div class='container'>
+      <div class='col-md-3 copy'>
+        <div class='top1'>
+          <i class='ham'></i>
+        </div>
+        <div class='top2'>
+          <h6>&copy; GankStars Esports, LLC</h6>
+          <p>All rights reserved</p>
+        </div>
+        <div class='clearfix'>
+        </div>
+      </div>
+      <div class='col-md-3 copy'>
+        <div class='top1'>
+          <i class='men'></i>
+        </div>
+        <div class='top2'>
+          <h6>Email:</h6>
+          <p>gankstarsleague@gmail.com</p>
+        </div>
+        <div class='clearfix'>
+        </div>
+      </div>
+      <div class='col-md-3 copy'>
+        <div class='top1'>
+          <i class='app'></i>
+        </div>
+        <div class='top2'>
+          <h6>Phone: </h6>
+          <p>1-347-991-9558</p>
+        </div>
+        <div class='clearfix'> </div>
+      </div>
+      <div class='col-md-3 copy'>
+        <div class='top1'>
+          <i class='lik'></i>
+        </div>
+        <div class='top2'>
+          <h6>Follow us at: </h6>
+          <p><a href='http://band.us/#!/band/63193021' target='_blank'><img src='Band_Button.png' width='35' height='35'></a>
+        <a href='https://twitter.com/gankstars' target='_blank'><img src='Twitter-Logo.png' width='35' height='35'></a></p>
+        </div>
+  <div class='clearfix'></div>
+  </div>
+  <div class='clearfix'>
+  </div>
+  </div>
+</div>
+	
+<br>
+<br>
+</footer>
+</body>
+</html>
+

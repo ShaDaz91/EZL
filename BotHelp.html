@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GSL Bot Help</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="Apply.css" />
+  <script src='Apply.js'></script>
+  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">GankStars League</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="Stats.html">Stats</a></li>
+        <li><a href="Standings.html">Standings</a></li>
+         <li><a href="Scoreboard.html">Scoreboard</a></li>
+        <li><a href="Schedule.html">Schedule</a></li>
+        <li><a href="Divisions.html">Divisons</a></li>
+        <li><a href="Apply.html">Apply</a></li>
+         <li><a href="Tutoring.html">Tutoring</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Shop.html">Shop</a></li>
+        <li><a href="Sponsors.html">Sponsors</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">GankStars League</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right bottomNav">
+        <li><a href="#Member">Member</a></li>
+        <li><a href="#Moderators">Moderators</a></li>
+        <li><a href="#Owners">Bot-Owners</a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>  
+<div class="jumbotron text-center" id="Bot">
+  <h1>GankStars League Bot</h1>
+  <p>Want to have fun with the bot or want to learn how to use it. Look no further. :)</p>
+</div>
+
+
+<div class="main Tables">
+  <h1 id="Member" style="text-align: center;" class="well well-lg">Members</h1>
+  </div>
+
+<div class="container">
+<div class="col-lg-12">
+ <table class="table table-bordered table-hover table-responsive" style="text-align: center; color: black">
+    <thead>
+    <tr>
+      <th colspan="3" class="success" style="text-align: center; font-size: 20px;">Member Permissions</th>
+    </tr>
+      <tr class="success">
+      <th style="text-align: center;">Command</th>
+      <th style="text-align: center;">Description</th>
+      <th style="text-align: center;">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="active">
+        <td>.checkmyperms</td>
+    <td>Checks your userspecific permissions on this channel.</td>
+    <td>.checkmyperms</td>
+      </tr>
+      <tr class="active">
+        <td>..</td>
+    <td>Adds a new quote with the specified name (single word) and message (no limit).</td>
+    <td>.. abc My message</td>
+    </tr>
+    <tr class="active">
+        <td>...</td>
+    <td>Shows a random quote with a specified name.</td>
+    <td>... abc</td>
+    </tr>
+<tr class="active">
+        <td>..qdel, ..quotedelete</td>
+    <td>Deletes all quotes with the specified keyword. You have to either be bot owner or the creator of the quote to delete it.</td>
+    <td>..qdel abc</td>
+      </tr>
+      <tr class="active">
+        <td>@BotName rip</td>
+    <td>Shows a grave image of someone with a start year</td>
+    <td>@GSLBot rip @Someone 2016</td>
+
+    </tr>
+    <tr class="active">
+        <td>@BotName do you love me</td>
+    <td>Replies with positive answer only to the bot owner.</td>
+    <td>@NadekoBot do you love me</td>
+    </tr>
+          <tr class="active">
+        <td>@BotName do you love me</td>
+    <td>Replies with positive answer only to the bot owner.</td>
+    <td>@NadekoBot do you love me</td>
+    </tr>
+          <tr class="active">
+        <td>@BotName how are you, @BotName how are you?</td>
+    <td>Replies positive only if bot owner is online.</td>
+    <td>@NadekoBot how are you</td>
+    </tr>
+        <tr class="active">
+        <td>@BotName fire</td>
+    <td>Shows a unicode fire message. Optional parameter [x] tells her how many times to repeat the fire.</td>
+    <td>@NadekoBot fire [x]</td>
+    </tr>
+        <tr class="active">
+        <td>@BotName ab</td>
+    <td>Try to get 'abalabahaha'</td>
+    <td>@NadekoBot ab</td>
+    </tr>
+        <tr class="active">
+        <td>$draw</td>
+    <td>Draws a card from the deck.If you supply number [x], she draws up to 5 cards from the deck.</td>
+    <td>$draw [x]</td>
+    </tr>
+        <tr class="active">
+        <td>$shuffle, $sh</td>
+    <td>Reshuffles all cards back into the deck.</td>
+    <td>$shuffle</td>
+    </tr>
+        <tr class="active">
+        <td>$flip</td>
+    <td>Flips coin(s) - heads or tails, and shows an image.</td>
+    <td>$flip or $flip 3</td>
+    </tr>
+        <tr class="active">
+        <td>$betflip, $bf</td>
+    <td>Bet to guess will the result be heads or tails. Guessing award you double flowers you've bet.</td>
+    <td>$bf 5 heads or $bf 3 t</td>
+    </tr>
+        <tr class="active">
+        <td>$roll</td>
+    <td>Rolls 0-100. If you supply a number [x] it rolls up to 30 normal dice. If you split 2 numbers with letter d (xdy) it will roll x dice from 1 to y.</td>
+    <td>$roll or $roll 7 or $roll 3d5</td>
+    </tr>
+        <tr class="active">
+        <td>$rolluo</td>
+    <td>	Rolls 0-100. If you supply a number [x] it rolls up to 30 normal dice (unordered). If you split 2 numbers with letter d (xdy) it will roll x dice from 1 to y.</td>
+    <td>	$roll or $roll 7 or $roll 3d5</td>
+    </tr>
+        <tr class="active">
+        <td>$nroll</td>
+    <td>Rolls in a given range.</td>
+    <td>$nroll 5 (rolls 0-5) or $nroll 5-15</td>
+    </tr>
+        <tr class="active">
+        <td>$race</td>
+    <td>Starts a new animal race.</td>
+    <td>$race</td>
+    </tr>
+        <tr class="active">
+    <td>$joinrace, $jr</td>
+    <td>	Joins a new race. You can specify an amount of flowers for betting (optional). You will get YourBet*(participants-1) back if you win.</td>
+    <td>$jr or $jr 5</td>
+      </tr>
+      <tr class="active">
+        <td>$raffle</td>
+    <td>Prints a name and ID of a random user from the online list from the (optional) role.</td>
+    <td>$raffle or $raffle RoleName</td>
+      </tr>
+      <tr class="active">
+        <td>$$$</td>
+    <td>Check how much gold a person has. (Defaults to yourself)</td>
+    <td>$$$ or $$$ @Someone</td>
+      </tr>
+      <tr class="active">
+        <td>$give</td>
+    <td>	Give someone a certain amount of NadekoFlowers</td>
+    <td>	$give 1 "@SomeGuy"</td>
+      </tr>
+      <tr class="active">
+        <td>$betroll, $br</td>
+    <td>Bets a certain amount of NadekoFlowers and rolls a dice. Rolling over 66 yields x2 flowers, over 90 - x3 and 100 x10.</td>
+    <td>$br 5</td>
+      </tr>
+      <tr class="active">
+        <td>$leaderboard, $lb</td>
+    <td>Displays bot currency leaderboard</td>
+    <td>$lb</td>
+      </tr>
+      <tr class="active">
+        <td>>t</td>
+    <td>Starts a game of trivia. You can add nohint to prevent hints.First player to get to 10 points wins by default. You can specify a different number. 30 seconds per question.</td>
+    <td>>t nohint or >t 5 nohint</td>
+      </tr>
+      <tr class="active">
+        <td>>tl</td>
+    <td>Shows a current trivia leaderboard.</td>
+    <td>>tl</td>
+      </tr>
+      <tr class="active">
+        <td>>tq</td>
+    <td>Quits current trivia after current question.</td>
+    <td>>tq</td>
+      </tr>
+      <tr class="active">
+        <td>>typestart</td>
+    <td>Starts a typing contest.</td>
+    <td>>typestart</td>
+      <tr class="active">
+ <td>&gt;typestop</td>
+<td>Stops a typing contest on the current channel.</td>
+<td>&gt;typestop</td>
+</tr>
+<tr class="active">
+<td>&gt;typeadd</td>
+<td>Adds a new article to the typing contest. Owner only.</td>
+<td>&gt;typeadd wordswords</td>
+</tr>
+<tr class="active">
+<td>&gt;poll</td>
+<td>Creates a poll, only person who has manage server permission can do it.</td>
+<td>&gt;poll Question?;Answer1;Answ 2;A_3</td>
+</tr>
+<tr class="active">
+<td>&gt;pollend</td>
+<td>Stops active poll on this server and prints the results in this channel.</td>
+<td>&gt;pollend</td>
+</tr>
+<tr class="active">
+<td>&gt;pick</td>
+<td>Picks a flower planted in this channel.</td>
+<td>&gt;pick</td>
+</tr>
+<tr class="active">
+<td>&gt;plant</td>
+<td>Spend a flower to plant it in this channel. (If bot is restarted or crashes, flower will be lost)</td>
+<td>&gt;plant</td>
+</tr>
+<tr class="active">
+<td>&gt;gencurrency, &gt;gc</td>
+<td>Toggles currency generation on this channel. Every posted message will have 2% chance to spawn a NadekoFlower. Optional parameter cooldown time in minutes, 5 minutes by default. Requires Manage Messages permission.</td>
+<td>&gt;gc or &gt;gc 60</td>
+</tr>
+<tr class="active">
+<td>&gt;leet</td>
+<td>Converts a text to leetspeak with 6 (1-6) severity levels</td>
+<td>&gt;leet 3 Hello</td>
+</tr>
+<tr class="active">
+<td>&gt;choose</td>
+<td>Chooses a thing from a list of things</td>
+<td>&gt;choose Get up;Sleep;Sleep more</td>
+</tr>
+<tr class="active">
+<td>&gt;8ball</td>
+<td>Ask the 8ball a yes/no question.</td>
+<td>&gt;8ball should i do something</td>
+</tr>
+<tr class="active">
+<td>&gt;rps</td>
+<td>Play a game of rocket paperclip scissors with Nadeko.</td>
+<td>&gt;rps scissors</td>
+</tr>
+<tr class="active">
+<td>&gt;linux</td>
+<td>Prints a customizable Linux interjection</td>
+<td>&gt;linux Spyware Windows</td>
+</tr>
+<tr class="active">
+<td>!!next,!!n,!!skip</td>
+<td>Goes to the next song in the queue. You have to be in the same voice channel as the bot.</td>
+<td>!!n</td>
+</tr>
+<tr class="active">
+<td>!!stop,!!s</td>
+<td>Stops the music and clears the playlist. Stays in the channel.</td>
+<td>!!s</td>
+</tr>
+<tr class="active">
+<td>!!pause,!!p</td>
+<td>Pauses or Unpauses the song.</td>
+<td>!!p</td>
+</tr>
+<tr class="active">
+<td>!!queue,!!q,!!yq</td>
+<td>Queue a song using keywords or a link. Bot will join your voice channel.<strong>You must be in a voice channel</strong>.</td>
+<td>!!q Dream Of Venice</td>
+</tr>
+<tr class="active">
+<td>!!soundcloudqueue,!!sq</td>
+<td>Queue a soundcloud song using keywords. Bot will join your voice channel.<strong>You must be in a voice channel</strong>.</td>
+<td>!!sq Dream Of Venice</td>
+</tr>
+<tr class="active">
+<td>!!listqueue,!!lq</td>
+<td>Lists 15 currently queued songs per page. Default page is 1.</td>
+<td>!!lq or !!lq 2</td>
+</tr>
+<tr class="active">
+<td>!!nowplaying,!!np</td>
+<td>Shows the song currently playing.</td>
+<td>!!np</td>
+</tr>
+<tr class="active">
+<td>!!volume,!!vol</td>
+<td>Sets the music volume 0-100%</td>
+<td>!!vol 50</td>
+</tr>
+<tr class="active">
+<td>!!defvol,!!dv</td>
+<td>Sets the default music volume when music playback is started (0-100). Persists through restarts.</td>
+<td>!!dv 80</td>
+</tr>
+<tr class="active">
+<td>!!mute,!!min</td>
+<td>Sets the music volume to 0%</td>
+<td>!!min</td>
+</tr>
+<tr class="active">
+<td>!!max</td>
+<td>Sets the music volume to 100%.</td>
+<td>!!max</td>
+</tr>
+<tr class="active">
+<td>!!half</td>
+<td>Sets the music volume to 50%.</td>
+<td>!!half</td>
+</tr>
+<tr class="active">
+<td>!!shuffle,!!sh</td>
+<td>Shuffles the current playlist.</td>
+<td>!!sh</td>
+</tr>
+<tr class="active">
+<td>!!playlist,!!pl</td>
+<td>Queues up to 500 songs from a youtube playlist specified by a link, or keywords.</td>
+<td>!!pl playlist link or name</td>
+</tr>
+<tr class="active">
+<td>!!soundcloudpl,!!scpl</td>
+<td>Queue a soundcloud playlist using a link.</td>
+<td>!!scpl https://soundcloud.com/saratology/sets/symphony</td>
+</tr>
+<tr class="active">
+<td>!!localplaylst,!!lopl</td>
+<td>Queues all songs from a directory. <strong>Bot Owner Only!</strong></td>
+<td>!!lopl C:/music/classical</td>
+</tr>
+<tr class="active">
+<td>!!radio,!!ra</td>
+<td>Queues a radio stream from a link. It can be a direct mp3 radio stream, .m3u, .pls .asx or .xspf (Usage Video: <a href="https://streamable.com/al54">https://streamable.com/al54</a>)</td>
+<td>!!ra radio link here</td>
+</tr>
+<tr class="active">
+<td>!!local,!!lo</td>
+<td>Queues a local file by specifying a full path. <strong>Bot Owner Only!</strong></td>
+<td>!!lo C:/music/mysong.mp3</td>
+</tr>
+<tr class="active">
+<td>!!remove,!!rm</td>
+<td>Remove a song by its # in the queue, or 'all' to remove whole queue.</td>
+<td>!!rm 5</td>
+</tr>
+<tr class="active">
+<td>!!movesong,!!ms</td>
+<td>Moves a song from one position to another.</td>
+<td>!!ms 5>3</td>
+</tr>
+<tr class="active">
+<td>!!setmaxqueue,!!smq</td>
+<td>Sets a maximum queue size. Supply 0 or no argument to have no limit.</td>
+<td>!!smq 50 or !!smq</td>
+</tr>
+<tr class="active">
+<td>!!reptcursong,!!rcs</td>
+<td>Toggles repeat of current song.</td>
+<td>!!rcs</td>
+</tr>
+<tr class="active">
+<td>!!rpeatplaylst,!!rpl</td>
+<td>Toggles repeat of all songs in the queue (every song that finishes is added to the end of the queue).</td>
+<td>!!rpl</td>
+</tr>
+<tr class="active">
+<td>!!save</td>
+<td>Saves a playlist under a certain name. Name must be no longer than 20 characters and mustn't contain dashes.</td>
+<td>!!save classical1</td>
+</tr>
+<tr class="active">
+<td>!!load</td>
+<td>Loads a playlist under a certain name.</td>
+<td>!!load classical-1</td>
+</tr>
+<tr class="active">
+<td>!!playlists,!!pls</td>
+<td>Lists all playlists. Paginated. 20 per page. Default page is 0.</td>
+<td>!!pls 1</td>
+</tr>
+<tr class="active">
+<td>!!deleteplaylist,!!delpls</td>
+<td>Deletes a saved playlist. Only if you made it or if you are the bot owner.</td>
+<td>!!delpls animu-5</td>
+</tr>
+<tr class="active">
+<td>!!goto</td>
+<td>Goes to a specific time in seconds in a song.</td>
+<td>!!goto 30</td>
+</tr>
+<tr class="active">
+<td>!!getlink,!!gl</td>
+<td>Shows a link to the song in the queue by index, or the currently playing song by default.</td>
+<td>!!gl</td>
+</tr>
+<tr class="active">
+<td>!!autoplay,!!ap</td>
+<td>Toggles autoplay - When the song is finished, automatically queue a related youtube song. (Works only for youtube songs and when queue is empty)</td>
+<td>!!ap</td>
+</tr>
+ <tr class="active">
+<td>~lolchamp</td>
+<td>Shows League Of Legends champion statistics. If there are spaces/apostrophes or in the name - omit them. Optional second parameter is a role.</td>
+<td>~lolchamp Riven or ~lolchamp Annie sup</td>
+</tr>
+<tr class="active">
+<td>~lolban</td>
+<td>Shows top 6 banned champions ordered by ban rate. Ban these champions and you will be Plat 5 in no time.</td>
+<td>~lolban</td>
+</tr>
+<tr class="active">
+<td>~hitbox,~hb</td>
+<td>Notifies this channel when a certain user starts streaming.</td>
+<td>~hitbox SomeStreamer</td>
+</tr>
+<tr class="active">
+<td>~twitch,~tw</td>
+<td>Notifies this channel when a certain user starts streaming.</td>
+<td>~twitch SomeStreamer</td>
+</tr>
+<tr class="active">
+<td>~beam,~bm</td>
+<td>Notifies this channel when a certain user starts streaming.</td>
+<td>~beam SomeStreamer</td>
+</tr>
+<tr class="active">
+<td>~checkhitbox,~chhb</td>
+<td>Checks if a certain user is streaming on the hitbox platform.</td>
+<td>~chhb SomeStreamer</td>
+</tr>
+<tr class="active">
+<td>~checktwitch,~chtw</td>
+<td>Checks if a certain user is streaming on the twitch platform.</td>
+<td>~chtw SomeStreamer</td>
+</tr>
+<tr class="active">
+<td>~checkbeam,~chbm</td>
+<td>Checks if a certain user is streaming on the beam platform.</td>
+<td>~chbm SomeStreamer</td>
+</tr>
+<tr class="active">
+<td>~removestream,~rms</td>
+<td>Removes notifications of a certain streamer on this channel.</td>
+<td>~rms SomeGuy</td>
+</tr>
+<tr class="active">
+<td>~liststreams,~ls</td>
+<td>Lists all streams you are following on this server.</td>
+<td>~ls</td>
+</tr>
+<tr class="active">
+<td>~convert</td>
+<td>Convert quantities from&gt;to.</td>
+<td>~convert m&gt;km 1000</td>
+</tr>
+<tr class="active">
+<td>~convertlist</td>
+<td>List of the convertable dimensions and currencies.</td>
+<td></td>
+</tr>
+<tr class="active">
+<td>~wowjoke</td>
+<td>Get one of Kwoth's penultimate WoW jokes.</td>
+<td>~wowjoke</td>
+</tr>
+<tr class="active">
+<td>~calculate,~calc</td>
+<td>Evaluate a mathematical expression.</td>
+<td>~calc 1+1</td>
+</tr>
+<tr class="active">
+<td>~osu</td>
+<td>Shows osu stats for a player.</td>
+<td>~osu Name or ~osu Name taiko</td>
+</tr>
+<tr class="active">
+<td>~osu b</td>
+<td>Shows information about an osu beatmap.</td>
+<td>~osu b <a href="https://osu.ppy.sh/s/127712">https://osu.ppy.sh/s/127712</a></td>
+</tr>
+<tr class="active">
+<td>~osu top5</td>
+<td>Displays a user's top 5 plays.</td>
+<td>~osu top5 Name</td>
+</tr>
+<tr class="active">
+<td>~pokemon,~poke</td>
+<td>Searches for a pokemon.</td>
+<td>~poke Sylveon</td>
+</tr>
+<tr class="active">
+<td>~pokemonability,~pokeab</td>
+<td>Searches for a pokemon ability.</td>
+<td>~pokeab "water gun"</td>
+</tr>
+<tr class="active">
+<td>~memelist</td>
+<td>Pulls a list of memes you can use with memegen from <a href="http://memegen.link/templates/">http://memegen.link/templates/</a></td>
+<td>~memelist</td>
+</tr>
+<tr class="active">
+<td>~memegen</td>
+<td>Generates a meme from memelist with top and bottom text.</td>
+<td>~memegen biw "gets iced coffee" "in the winter"</td>
+</tr>
+<tr class="active">
+<td>~we</td>
+<td>Shows weather data for a specified city and a country. BOTH ARE REQUIRED. Use country abbrevations.</td>
+<td>~we Moscow RF</td>
+</tr>
+<tr class="active">
+<td>~yt</td>
+<td>Searches youtubes and shows the first result</td>
+<td>~yt query</td>
+</tr>
+<tr class="active">
+<td>~ani,~anime,~aq</td>
+<td>Queries anilist for an anime and shows the first result.</td>
+<td>~aq aquarion evol</td>
+</tr>
+<tr class="active">
+<td>~imdb</td>
+<td>Queries imdb for movies or series, show first result.</td>
+<td>~imdb Batman vs Superman</td>
+</tr>
+<tr class="active">
+<td>~mang,~manga,~mq</td>
+<td>Queries anilist for a manga and shows the first result.</td>
+<td>~mq Shingeki no kyojin</td>
+</tr>
+<tr class="active">
+<td>~randomcat,~meow</td>
+<td>Shows a random cat image.</td>
+<td>~meow</td>
+</tr>
+<tr class="active">
+<td>~randomdog,~woof</td>
+<td>Shows a random dog image.</td>
+<td>~woof</td>
+</tr>
+<tr class="active">
+<td>~i</td>
+<td>Pulls the first image found using a search parameter. Use ~ir for different results.</td>
+<td>~i cute kitten</td>
+</tr>
+<tr class="active">
+<td>~ir</td>
+<td>Pulls a random image using a search parameter.</td>
+<td>~ir cute kitten</td>
+</tr>
+<tr class="active">
+<td>~lmgtfy</td>
+<td>Google something for an idiot.</td>
+<td>~lmgtfy query</td>
+</tr>
+<tr class="active">
+<td>~google,~g</td>
+<td>Get a google search link for some terms.</td>
+<td>~google query</td>
+</tr>
+<tr class="active">
+<td>~hs</td>
+<td>Searches for a Hearthstone card and shows its image. Takes a while to complete.</td>
+<td>~hs Ysera</td>
+</tr>
+<tr class="active">
+<td>~ud</td>
+<td>Searches Urban Dictionary for a word.</td>
+<td>~ud Pineapple</td>
+</tr>
+<tr class="active">
+<td>~#</td>
+<td>Searches Tagdef.com for a hashtag.</td>
+<td>~# ff</td>
+</tr>
+<tr class="active">
+<td>~quote</td>
+<td>Shows a random quote.</td>
+<td>~quote</td>
+</tr>
+<tr class="active">
+<td>~catfact</td>
+<td>Shows a random catfact from <a href="http://catfacts-api.appspot.com/api/facts">http://catfacts-api.appspot.com/api/facts</a></td>
+<td>~catfact</td>
+</tr>
+<tr class="active">
+<td>~yomama,~ym</td>
+<td>Shows a random joke from <a href="http://api.yomomma.info/">http://api.yomomma.info/</a></td>
+<td>~ym</td>
+</tr>
+<tr class="active">
+<td>~randjoke,~rj</td>
+<td>Shows a random joke from <a href="http://tambal.azurewebsites.net/joke/random">http://tambal.azurewebsites.net/joke/random</a></td>
+<td>~rj</td>
+</tr>
+<tr class="active">
+<td>~chucknorris,~cn</td>
+<td>Shows a random chucknorris joke from <a href="http://tambal.azurewebsites.net/joke/random">http://tambal.azurewebsites.net/joke/random</a></td>
+<td>~cn</td>
+</tr>
+<tr class="active">
+<td>~magicitem,~mi</td>
+<td>Shows a random magicitem from <a href="https://1d4chan.org/wiki/List_of_/tg/%27s_magic_items">https://1d4chan.org/wiki/List_of_/tg/%27s_magic_items</a></td>
+<td>~mi</td>
+</tr>
+<tr class="active">
+<td>~revav</td>
+<td>Returns a google reverse image search for someone's avatar.</td>
+<td>~revav "@SomeGuy"</td>
+</tr>
+<tr class="active">
+<td>~revimg</td>
+<td>Returns a google reverse image search for an image from a link.</td>
+<td>~revav Image link</td>
+</tr>
+<tr class="active">
+<td>~safebooru</td>
+<td>Shows a random image from safebooru with a given tag. Tag is optional but preffered. (multiple tags are appended with +)</td>
+<td>~safebooru yuri+kissing</td>
+</tr>
+<tr class="active">
+<td>~wiki</td>
+<td>Gives you back a wikipedia link</td>
+<td>~wiki query</td>
+</tr>
+<tr class="active">
+<td>~clr</td>
+<td>Shows you what color corresponds to that hex.</td>
+<td>~clr 00ff00</td>
+</tr>
+<tr class="active">
+<td>~videocall</td>
+<td>Creates a private <a href="http://www.appear.in">http://www.appear.in</a> video call link for you and other mentioned people. The link is sent to mentioned people via a private message.</td>
+<td>~videocall "@SomeGuy"</td>
+</tr>
+<tr class="active">
+<td>~av,~avatar</td>
+<td>Shows a mentioned person's avatar.</td>
+<td>~av "@SomeGuy"</td>
+</tr>
+<tr class="active">
+<td>,createwar,,cw</td>
+<td>Creates a new war by specifying a size (&gt;10 and multiple of 5) and enemy clan name.</td>
+<td>,cw 15 The Enemy Clan</td>
+</tr>
+<tr class="active">
+<td>,startwar,,sw</td>
+<td>Starts a war with a given number.</td>
+<td>,sw 15</td>
+</tr>
+<tr class="active">
+<td>,listwar,,lw</td>
+<td>Shows the active war claims by a number. Shows all wars in a short way if no number is specified.</td>
+<td>,lw [war_number] or ,lw</td>
+</tr>
+<tr class="active">
+<td>,claim,,call,,c</td>
+<td>Claims a certain base from a certain war. You can supply a name in the third optional argument to claim in someone else's place.</td>
+<td>,call [war_number] [base_number] [optional_other_name]</td>
+</tr>
+<tr class="active">
+<td>,claimfinish,,cf,,cf3,,claimfinish3</td>
+<td>Finish your claim with 3 stars if you destroyed a base. Optional second argument finishes for someone else.</td>
+<td>,cf [war_number] [optional_other_name]</td>
+</tr>
+<tr class="active">
+<td>,claimfinish2,,cf2</td>
+<td>Finish your claim with 2 stars if you destroyed a base. Optional second argument finishes for someone else.</td>
+<td>,cf [war_number] [optional_other_name]</td>
+</tr>
+<tr class="active">
+<td>,claimfinish1,,cf1</td>
+<td>Finish your claim with 1 stars if you destroyed a base. Optional second argument finishes for someone else.</td>
+<td>,cf [war_number] [optional_other_name]</td>
+</tr>
+<tr class="active">
+<td>,unclaim,,uncall,,uc</td>
+<td>Removes your claim from a certain war. Optional second argument denotes a person in whose place to unclaim</td>
+<td>,uc [war_number] [optional_other_name]</td>
+</tr>
+<tr class="active">
+<td>,endwar,,ew</td>
+<td>Ends the war with a given index.</td>
+<td>,ew [war_number]</td>
+</tr>
+<tr class="active">
+<td>>attack</td>
+<td>Attacks a target with the given move. Use >movelist to see a list of moves your type can use.</td>
+<td>>attack "vine whip" @someguy</td>
+</tr>
+<tr class="active">
+<td>>movelist,>ml</td>
+<td>Lists the moves you are able to use</td>
+<td>>ml</td>
+</tr>
+<tr class="active">
+<td>>heal</td>
+<td>Heals someone. Revives those who fainted. Costs a NadekoFlower</td>
+<td>>heal @someone</td>
+</tr>
+<tr class="active">
+<td>>type</td>
+<td>Get the poketype of the target.</td>
+<td>>type @someone</td>
+</tr>
+<tr class="active">
+<td>>settype</td>
+<td>Set your poketype. Costs a NadekoFlower.</td>
+<td>>settype fire</td>
+</tr>
+<tr class="active">
+<td>~translate,~trans</td>
+<td>Translates from>to text. From the given language to the destiation language.</td>
+<td>~trans en>fr Hello</td>
+</tr>
+<tr class="active">
+<td>~translangs</td>
+<td>List the valid languages for translation.</td>
+<td>~translangs or ~translangs language</td>
+</tr>
+<tr class="active">
+<td>\o\</td>
+<td>Custom reaction.</td>
+<td>\o\</td>
+</tr>
+<tr class="active">
+<td>/o/</td>
+<td>Custom reaction.</td>
+<td>/o/</td>
+</tr>
+<tr class="active">
+<td>moveto</td>
+<td>Custom reaction.</td>
+<td>moveto</td>
+</tr>
+<tr class="active">
+<td>comeatmebro</td>
+<td>Custom reaction.</td>
+<td>comeatmebro</td>
+</tr>
+<tr class="active">
+<td>e</td>
+<td>Custom reaction.</td>
+<td>e</td>
+</tr>
+<tr class="active">
+<td>@BotName insult insult</td>
+<td>Custom reaction.</td>
+<td>%mention% insult</td>
+</tr>
+<tr class="active">
+<td>@BotName praise</td>
+<td>Custom reaction.</td>
+<td>%mention% praise</td>
+</tr>
+<tr class="active">
+<td>@BotName pat</td>
+<td>Custom reaction.</td>
+<td>%mention% pat</td>
+</tr>
+<tr class="active">
+<td>@BotName cry</td>
+<td>Custom reaction.</td>
+<td>%mention% cry</td>
+</tr>
+<tr class="active">
+<td>@BotName are you real?</td>
+<td>Custom reaction.</td>
+<td>%mention% are you real?</td>
+</tr>
+<tr class="active">
+<td>@BotName are you there?</td>
+<td>Custom reaction.</td>
+<td>%mention% are you there?</td>
+</tr>
+<tr class="active">
+<td>@BotName draw</td>
+<td>Custom reaction.</td>
+<td>%mention% draw</td>
+</tr>
+<tr class="active">
+<td>@BotName bb</td>
+<td>Custom reaction.</td>
+<td>%mention% bb</td>
+</tr>
+<tr class="active">
+<td>@BotName call</td>
+<td>Custom reaction.</td>
+<td>%mention% call</td>
+</tr>
+<tr class="active">
+<td>@BotName disguise</td>
+<td>Custom reaction.</td>
+<td>%mention% disguise</td>
+</tr>
+<tr class="active">
+<td>@BotName inv</td>
+<td>Custom reaction.</td>
+<td>%mention% inv</td>
+</tr>
+<tr class="active">
+<td>@BotName threaten</td>
+<td>Custom reaction.</td>
+<td>%mention% threaten</td>
+</tr>
+<tr class="active">
+<td>@BotName archer</td>
+<td>Custom reaction.</td>
+<td>%mention% archer</td>
+</tr>
+    </tbody>
+  </table>
+  </div>
+  </div>
+ 
+<div>
+ <h1 id="Moderators" style="text-align: center;" class="well well-lg">Moderators</h1>
+</div>
+<div class="container">
+<div class="col-lg-12">
+ <table class="table table-bordered table-hover table-responsive" style="text-align: center; color: black">
+    <thead>
+    <tr>
+      <th colspan="3" class="success" style="text-align: center; font-size: 20px;">Moderator Permissions</th>
+    </tr>
+      <tr class="success">
+      <th style="text-align: center;">Command</th>
+      <th style="text-align: center;">Description</th>
+      <th style="text-align: center;">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr class="active">
+<td>.grdel</td>
+<td>Toggles automatic deletion of greet and bye messages. <strong>Needs Manage Server Permissions.</strong></td>
+<td>.grdel</td>
+</tr>
+<tr class="active">
+<td>.greet</td>
+<td>Toggles anouncements on the current channel when someone joins the server. <strong>Needs Manage Server Permissions.</strong></td>
+<td>.greet</td>
+</tr>
+<tr class="active">
+<td>.greetmsg</td>
+<td>Sets a new join announcement message. Type %user% if you want to mention the new member. Using it with no message will show the current greet message. <strong>Needs Manage Server Permissions.</strong></td>
+<td>.greetmsg Welcome to the server, %user%.</td>
+</tr>
+<tr class="active">
+<td>.bye</td>
+<td>Toggles anouncements on the current channel when someone leaves the server.</td>
+<td>.bye</td>
+</tr>
+<tr class="active">
+<td>.byemsg</td>
+<td>Sets a new leave announcement message. Type %user% if you want to mention the new member. Using it with no message will show the current bye message. <strong>Needs Manage Server Permissions.</strong></td>
+<td>.byemsg %user% has left the server.</td>
+</tr>
+<tr class="active">
+<td>.byepm</td>
+<td>Toggles whether the good bye messages will be sent in a PM or in the text channel. <strong>Needs Manage Server Permissions.</strong></td>
+<td>.byepm</td>
+</tr>
+<tr class="active">
+<td>.greetpm</td>
+<td>Toggles whether the greet messages will be sent in a PM or in the text channel. <strong>Needs Manage Server Permissions.</strong></td>
+<td>.greetpm</td>
+</tr>
+<tr class="active">
+<td>.spmom</td>
+<td>Toggles whether mentions of other offline users on your server will send a pm to them. <strong>Needs Manage Server Permissions.</strong></td>
+<td>.spmom</td>
+</tr>
+<tr class="active">
+<td>.userpresence</td>
+<td>Starts logging to this channel when someone from the server goes online/offline/idle. <strong>Needs Manage Server Permissions.</strong></td>
+<td>.userpresence</td>
+</tr>
+<tr class="active">
+<td>.voicepresence</td>
+<td>Toggles logging to this channel whenever someone joins or leaves a voice channel you are in right now. <strong>Needs Manage Server Permissions.</strong></td>
+<td>.voicerpresence</td>
+</tr>
+<tr class="active">
+<td>.repeatinvoke,.repinv</td>
+<td>Immediately shows the repeat message and restarts the timer. <strong>Needs Manage Messages Permissions.</strong></td>
+<td>.repinv</td>
+</tr>
+<tr class="active">
+<td>.repeat</td>
+<td>Repeat a message every X minutes. If no parameters are specified, repeat is disabled. <strong>Needs Manage Messages Permissions.</strong></td>
+<td>.repeat 5 Hello there</td>
+</tr>
+<tr class="active">
+<td>.slowmode</td>
+<td>Toggles slow mode. When ON, users will be able to send only 1 message every 5 seconds. <strong>Needs Manage Messages Permissions.</strong></td>
+<td>.slowmode</td>
+</tr>
+<tr class="active">
+<td>.cleanv+t,.cv+t</td>
+<td>Deletes all text channels ending in -voice for which voicechannels are not found. **Use at your own risk.</td>
+<td></td>
+</tr>
+<tr class="active">
+<td>Needs Manage Roles and Manage Channels Permissions.**</td>
+<td>.cleanv+t</td>
+<td></td>
+</tr>
+<tr class="active">
+<td>.voice+text,.v+t</td>
+<td>Creates a text channel for each voice channel only users in that voice channel can see.If you are server owner, keep in mind you will see them all the time regardless. <strong>Needs Manage Roles and Manage Channels Permissions.</strong></td>
+<td>.voice+text</td>
+</tr>
+<tr class="active">
+<td>.jcsc</td>
+<td>Joins current channel to an instance of cross server channel using the token. <strong>Needs Manage Server Permissions.</strong></td>
+<td>.jcsc</td>
+</tr>
+<tr class="active">
+<td>.lcsc</td>
+<td>Leaves Cross server channel instance from this channel. <strong>Needs Manage Server Permissions.</strong></td>
+<td>.lcsc</td>
+</tr>
+<tr class="active">
+<td>.asar</td>
+<td>Adds a role, or list of roles separated by whitespace(use quotations for multiword roles) to the list of self-assignable roles. <strong>Needs Manage Roles Permissions.</strong></td>
+<td>.asar Gamer</td>
+</tr>
+<tr class="active">
+<td>.rsar</td>
+<td>Removes a specified role from the list of self-assignable roles.</td>
+<td>.rsar</td>
+</tr>
+<tr class="active">
+<td>.lsar</td>
+<td>Lists all self-assignable roles.</td>
+<td>.lsar</td>
+</tr>
+<tr class="active">
+<td>.togglexclsar,.tesar</td>
+<td>toggle whether the self-assigned roles should be exclusive</td>
+<td>.tesar</td>
+</tr>
+<tr class="active">
+<td>.iam</td>
+<td>Adds a role to you that you choose. Role must be on a list of self-assignable roles.</td>
+<td>.iam Gamer</td>
+</tr>
+<tr class="active">
+<td>.iamnot,.iamn</td>
+<td>Removes a role to you that you choose. Role must be on a list of self-assignable roles.</td>
+<td>.iamn Gamer</td>
+</tr>
+<tr class="active">
+<td>.listcustreact,.lcr</td>
+<td>Lists custom reactions (paginated with 30 commands per page). Use 'all' instead of page number to get all custom reactions DM-ed to you.</td>
+<td>.lcr 1</td>
+</tr>
+<tr class="active">
+<td>.showcustreact,.scr</td>
+<td>Shows all possible responses from a single custom reaction.</td>
+<td>.scr %mention% bb</td>
+</tr>
+<tr class="active">
+<td>.autoassignrole,.aar</td>
+<td>Automaticaly assigns a specified role to every user who joins the server. <strong>Needs Manage Roles Permissions.</strong></td>
+<td>.aar to disable, .aar Role Name to enable</td>
+</tr>
+<tr class="active">
+<td>.listincidents,.lin</td>
+<td>List all UNREAD incidents and flags them as read. <strong>Needs Manage Server Permissions.</strong></td>
+<td>.lin</td>
+</tr>
+<tr class="active">
+<td>.listallincidents,.lain</td>
+<td>Sends you a file containing all incidents and flags them as read. <strong>Needs Manage Server Permissions.</strong></td>
+<td>.lain</td>
+</tr>
+<tr class="active">
+<td>.delmsgoncmd</td>
+<td>Toggles the automatic deletion of user's successful command message to prevent chat flood. <strong>Server Manager Only.</strong></td>
+<td>.delmsgoncmd</td>
+</tr>
+<tr class="active">
+<td>.setrole,.sr</td>
+<td>Sets a role for a given user. <strong>Needs Manage Roles Permissions.</strong></td>
+<td>.sr @User Guest</td>
+</tr>
+<tr class="active">
+<td>.removerole,.rr</td>
+<td>Removes a role from a given user. <strong>Needs Manage Roles Permissions.</strong></td>
+<td>.rr @User Admin</td>
+</tr>
+<tr class="active">
+<td>.renamerole,.renr</td>
+<td>Renames a role. Roles you are renaming must be lower than bot's highest role. <strong>Manage Roles Permissions.</strong></td>
+<td>.renr "First role" SecondRole</td>
+</tr>
+<tr class="active">
+<td>.removeallroles,.rar</td>
+<td>Removes all roles from a mentioned user. <strong>Needs Manage Roles Permissions.</strong></td>
+<td>.rar @User</td>
+</tr>
+<tr class="active">
+<td>.createrole,.cr</td>
+<td>Creates a role with a given name. <strong>Needs Manage Roles Permissions.</strong></td>
+<td>.cr Awesome Role</td>
+</tr>
+<tr class="active">
+<td>.rolecolor,.rc</td>
+<td>Set a role's color to the hex or 0-255 rgb color value provided. <strong>Needs Manage Roles Permissions.</strong></td>
+<td>.rc Admin 255 200 100 or .rc Admin ffba55</td>
+</tr>
+<tr class="active">
+<td>.ban,.b</td>
+<td>Bans a user by id or name with an optional message. <strong>Needs Ban Permissions.</strong></td>
+<td>.b "@some Guy" Your behaviour is toxic.</td>
+</tr>
+<tr class="active">
+<td>.softban,.sb</td>
+<td>Bans and then unbans a user by id or name with an optional message. <strong>Needs Ban Permissions.</strong></td>
+<td>.sb "@some Guy" Your behaviour is toxic.</td>
+</tr>
+<tr class="active">
+<td>.kick,.k</td>
+<td>Kicks a mentioned user. <strong>Needs Kick Permissions.</strong></td>
+<td>.k "@some Guy" Your behaviour is toxic.</td>
+</tr>
+<tr class="active">
+<td>.mute</td>
+<td>Mutes mentioned user or users. <strong>Needs Mute Permissions.</strong></td>
+<td>.mute "@Someguy" or .mute "@Someguy" "@Someguy"</td>
+</tr>
+<tr class="active">
+<td>.unmute</td>
+<td>Unmutes mentioned user or users. <strong>Needs Mute Permissions.</strong></td>
+<td>.unmute "@Someguy" or .unmute "@Someguy" "@Someguy"</td>
+</tr>
+<tr class="active">
+<td>.deafen,.deaf</td>
+<td>Deafens mentioned user or users. <strong>Needs Deafen Permissions.</strong></td>
+<td>.deaf "@Someguy" or .deaf "@Someguy" "@Someguy"</td>
+</tr>
+<tr class="active">
+<td>.undeafen,.undef</td>
+<td>Undeafens mentioned user or users. <strong>Needs Deafen Permissions.</strong></td>
+<td>.undef "@Someguy" or .undef "@Someguy" "@Someguy"</td>
+</tr>
+<tr class="active">
+<td>.delvoichanl,.dvch</td>
+<td>Deletes a voice channel with a given name. <strong>Needs Manage Channel Permissions.</strong></td>
+<td>.dvch VoiceChannelName</td>
+</tr>
+<tr class="active">
+<td>.creatvoichanl,.cvch</td>
+<td>Creates a new voice channel with a given name. <strong>Needs Manage Channel Permissions.</strong></td>
+<td>.cvch VoiceChannelName</td>
+</tr>
+<tr class="active">
+<td>.deltxtchanl,.dtch</td>
+<td>Deletes a text channel with a given name. <strong>Needs Manage Channel Permissions.</strong></td>
+<td>.dtch TextChannelName</td>
+</tr>
+<tr class="active">
+<td>.creatxtchanl,.ctch</td>
+<td>Creates a new text channel with a given name. <strong>Needs Manage Channel Permissions.</strong></td>
+<td>.ctch TextChannelName</td>
+</tr>
+<tr class="active">
+<td>.settopic,.st</td>
+<td>Sets a topic on the current channel. <strong>Needs Manage Channel Permissions.</strong></td>
+<td>.st My new topic</td>
+</tr>
+<tr class="active">
+<td>.setchanlname,.schn</td>
+<td>Changed the name of the current channel. <strong>Needs Manage Channel Permissions.</strong></td>
+<td>.schn NewName</td>
+</tr>
+<tr class="active">
+<td>.prune,.clr</td>
+<td>.prune removes all nadeko's messages in the last 100 messages.prune X removes last X messages from the channel (up to 100)prune @Someone removes all Someone's messages in the last 100 messages.prune @Someone X removes last X 'Someone's' messages in the channel.</td>
+<td>.prune or .prune 5 or .prune @Someone or .prune @Someone X</td>
+</tr>
+<tr class="active">
+<td>.mentionrole,.menro</td>
+<td>Mentions every person from the provided role or roles (separated by a ',') on this server. Requires you to have mention everyone permission.</td>
+<td>.menro RoleName</td>
+</tr>
+<tr class="active">
+<td>.donators</td>
+<td>List of lovely people who donated to keep this project alive.</td>
+<td>.donators</td>
+</tr>
+<tr class="active">
+<tr class="active">
+<td>.remind</td>
+<td>Sends a message to you or a channel after certain amount of time. First argument is me/here/'channelname'. Second argument is time in a descending order (mo>w>d>h>m) example: 1w5d3h10m. Third argument is a (multiword)message.</td>
+<td>.remind me 1d5h Do something or .remind #general Start now!</td>
+</tr>
+<tr class="active">
+<td>.serverinfo,.sinfo</td>
+<td>Shows info about the server the bot is on. If no channel is supplied, it defaults to current one.</td>
+<td>.sinfo Some Server</td>
+</tr>
+<tr class="active">
+<td>.channelinfo,.cinfo</td>
+<td>Shows info about the channel. If no channel is supplied, it defaults to current one.</td>
+<td>.cinfo #some-channel</td>
+</tr>
+<tr class="active">
+<td>.userinfo,.uinfo</td>
+<td>Shows info about the user. If no user is supplied, it defaults a user running the command.</td>
+<td>.uinfo @SomeUser</td>
+</tr>
+<tr class="active">
+<td>.whoplays</td>
+<td>Shows a list of users who are playing the specified game.</td>
+<td>.whoplays Overwatch</td>
+</tr>
+<tr class="active">
+<td>.inrole</td>
+<td>Lists every person from the provided role or roles (separated by a ',') on this server. If the list is too long for 1 message, you must have Manage Messages permission.</td>
+<td>.inrole Role</td>
+</tr>
+<tr class="active">
+<td>.checkmyperms</td>
+<td>Checks your userspecific permissions on this channel.</td>
+<td>.checkmyperms</td>
+</tr>
+<tr class="active">
+<td>.stats</td>
+<td>Shows some basic stats for Nadeko.</td>
+<td>.stats</td>
+</tr>
+<tr class="active">
+<td>.dysyd</td>
+<td>Shows some basic stats for Nadeko.</td>
+<td>.dysyd</td>
+</tr>
+<tr class="active">
+<td>.userid,.uid</td>
+<td>Shows user ID.</td>
+<td>.uid or .uid "@SomeGuy"</td>
+</tr>
+<tr class="active">
+<td>.channelid,.cid</td>
+<td>Shows current channel ID.</td>
+<td>.cid</td>
+</tr>
+<tr class="active">
+<td>.serverid,.sid</td>
+<td>Shows current server ID.</td>
+<td>.sid</td>
+</tr>
+<tr class="active">
+<td>.roles</td>
+<td>List all roles on this server or a single user if specified.</td>
+<td>.roles</td>
+</tr>
+<tr class="active">
+<td>.channeltopic,.ct</td>
+<td>Sends current channel's topic as a message.</td>
+<td>.ct</td>
+</tr>
+
+
+
+<tr class="active">
+<td>;chnlfilterinv,;cfi</td>
+<td>Enables or disables automatic deleting of invites on the channel.If no channel supplied, it will default to current one. Use ALL to apply to all existing channels at once.</td>
+<td>;cfi enable #general-chat</td>
+</tr>
+<tr class="active">
+<td>;srvrfilterinv,;sfi</td>
+<td>Enables or disables automatic deleting of invites on the server.</td>
+<td>;sfi disable</td>
+</tr>
+<tr class="active">
+<td>;chnlfilterwords,;cfw</td>
+<td>Enables or disables automatic deleting of messages containing banned words on the channel.If no channel supplied, it will default to current one. Use ALL to apply to all existing channels at once.</td>
+<td>;cfw enable #general-chat</td>
+</tr>
+<tr class="active">
+<td>;addfilterword,;afw</td>
+<td>Adds a new word to the list of filtered words</td>
+<td>;afw poop</td>
+</tr>
+<tr class="active">
+<td>;rmvfilterword,;rfw</td>
+<td>Removes the word from the list of filtered words</td>
+<td>;rw poop</td>
+</tr>
+<tr class="active">
+<td>;lstfilterwords,;lfw</td>
+<td>Shows a list of filtered words</td>
+<td>;lfw</td>
+</tr>
+<tr class="active">
+<td>;srvrfilterwords,;sfw</td>
+<td>Enables or disables automatic deleting of messages containing forbidden words on the server.</td>
+<td>;sfw disable</td>
+</tr>
+<tr class="active">
+<td>;permrole,;pr</td>
+<td>Sets a role which can change permissions. Or supply no parameters to find out the current one. Default one is 'Nadeko'.</td>
+<td>;pr role</td>
+</tr>
+<tr class="active">
+<td>;rolepermscopy,;rpc</td>
+<td>Copies BOT PERMISSIONS (not discord permissions) from one role to another.</td>
+<td>;rpc Some Role ~ Some other role</td>
+</tr>
+<tr class="active">
+<td>;chnlpermscopy,;cpc</td>
+<td>Copies BOT PERMISSIONS (not discord permissions) from one channel to another.</td>
+<td>;cpc Some Channel ~ Some other channel</td>
+</tr>
+<tr class="active">
+<td>;usrpermscopy,;upc</td>
+<td>Copies BOT PERMISSIONS (not discord permissions) from one role to another.</td>
+<td>;upc @SomeUser ~ @SomeOtherUser</td>
+</tr>
+<tr class="active">
+<td>;verbose,;v</td>
+<td>Sets whether to show when a command/module is blocked.</td>
+<td>;verbose true</td>
+</tr>
+<tr class="active">
+<td>;srvrperms,;sp</td>
+<td>Shows banned permissions for this server.</td>
+<td>;sp</td>
+</tr>
+<tr class="active">
+<td>;roleperms,;rp</td>
+<td>Shows banned permissions for a certain role. No argument means for everyone.</td>
+<td>;rp AwesomeRole</td>
+</tr>
+<tr class="active">
+<td>;chnlperms,;cp</td>
+<td>Shows banned permissions for a certain channel. No argument means for this channel.</td>
+<td>;cp #dev</td>
+</tr>
+<tr class="active">
+<td>;userperms,;up</td>
+<td>Shows banned permissions for a certain user. No argument means for yourself.</td>
+<td>;up Kwoth</td>
+</tr>
+<tr class="active">
+<td>;srvrmdl,;sm</td>
+<td>Sets a module's permission at the server level.</td>
+<td>;sm "module name" enable</td>
+</tr>
+<tr class="active">
+<td>;srvrcmd,;sc</td>
+<td>Sets a command's permission at the server level.</td>
+<td>;sc "command name" disable</td>
+</tr>
+<tr class="active">
+<td>;rolemdl,;rm</td>
+<td>Sets a module's permission at the role level.</td>
+<td>;rm "module name" enable MyRole</td>
+</tr>
+<tr class="active">
+<td>;rolecmd,;rc</td>
+<td>Sets a command's permission at the role level.</td>
+<td>;rc "command name" disable MyRole</td>
+</tr>
+<tr class="active">
+<td>;chnlmdl,;cm</td>
+<td>Sets a module's permission at the channel level.</td>
+<td>;cm "module name" enable SomeChannel</td>
+</tr>
+<tr class="active">
+<td>;chnlcmd,;cc</td>
+<td>Sets a command's permission at the channel level.</td>
+<td>;cc "command name" enable SomeChannel</td>
+</tr>
+<tr class="active">
+<td>;usrmdl,;um</td>
+<td>Sets a module's permission at the user level.</td>
+<td>;um "module name" enable SomeUsername</td>
+</tr>
+<tr class="active">
+<td>;usrcmd,;uc</td>
+<td>Sets a command's permission at the user level.</td>
+<td>;uc "command name" enable SomeUsername</td>
+</tr>
+<tr class="active">
+<td>;allsrvrmdls,;asm</td>
+<td>Sets permissions for all modules at the server level.</td>
+<td>;asm [enable/disable]</td>
+</tr>
+<tr class="active">
+<td>;allsrvrcmds,;asc</td>
+<td>Sets permissions for all commands from a certain module at the server level.</td>
+<td>;asc "module name" [enable/disable]</td>
+</tr>
+<tr class="active">
+<td>;allchnlmdls,;acm</td>
+<td>Sets permissions for all modules at the channel level.</td>
+<td>;acm [enable/disable] SomeChannel</td>
+</tr>
+<tr class="active">
+<td>;allchnlcmds,;acc</td>
+<td>Sets permissions for all commands from a certain module at the channel level.</td>
+<td>;acc "module name" [enable/disable] SomeChannel</td>
+</tr>
+<tr class="active">
+<td>;allrolemdls,;arm</td>
+<td>Sets permissions for all modules at the role level.</td>
+<td>;arm [enable/disable] MyRole</td>
+</tr>
+<tr class="active">
+<td>;allrolecmds,;arc</td>
+<td>Sets permissions for all commands from a certain module at the role level.</td>
+<td>;arc "module name" [enable/disable] MyRole</td>
+</tr>
+<tr class="active">
+<td>;ubl</td>
+<td>Blacklists a mentioned user.</td>
+<td>;ubl [user_mention]</td>
+</tr>
+<tr class="active">
+<td>;uubl</td>
+<td>Unblacklists a mentioned user.</td>
+<td>;uubl [user_mention]</td>
+</tr>
+<tr class="active">
+<td>;cbl</td>
+<td>Blacklists a mentioned channel (#general for example).</td>
+<td>;cbl #some_channel</td>
+</tr>
+<tr class="active">
+<td>;cubl</td>
+<td>Unblacklists a mentioned channel (#general for example).</td>
+<td>;cubl #some_channel</td>
+</tr>
+<tr class="active">
+<td>;sbl</td>
+<td>Blacklists a server by a name or id (#general for example). <strong>BOT OWNER ONLY</strong></td>
+<td>;sbl [servername/serverid]</td>
+</tr>
+<tr class="active">
+<td>;cmdcooldown,;cmdcd</td>
+<td>Sets a cooldown per user for a command. Set 0 to clear.</td>
+<td>;cmdcd "some cmd" 5</td>
+</tr>
+<tr class="active">
+<td>;allcmdcooldowns,;acmdcds</td>
+<td>Shows a list of all commands and their respective cooldowns.</td>
+<td>;acmdcds</td>
+</tr>
+      
+        </tbody>
+  </table>
+  </div>
+  </div>
+  
+<div>
+ <h1 id="Owners" style="text-align: center;" class="well well-lg">Bot-Owner</h1>
+</div>
+<div class="container">
+<div class="col-lg-12">
+ <table class="table table-bordered table-hover table-responsive" style="text-align: center; color: black">
+    <thead>
+    <tr>
+      <th colspan="3" class="success" style="text-align: center; font-size: 20px;">Bot-Owner Permissions</th>
+    </tr>
+      <tr class="success">
+      <th style="text-align: center;">Command</th>
+      <th style="text-align: center;">Description</th>
+      <th style="text-align: center;">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="active">
+        <td>@BotName die</td>
+    <td>Shuts the bot down.</td>
+    <td>@NadekoBot die</td>
+      </tr>
+      <tr class="active">
+        <td>@BotName dump</td>
+    <td>	Dumps all of the invites it can to dump.txt.</td>
+    <td>	@NadekoBot dump</td>
+    </tr>
+    <tr class="active">
+        <td>$award</td>
+    <td>Gives someone a certain amount of flowers.</td>
+    <td>$award 100 @person</td>
+    </tr>
+<tr class="active">
+        <td>$take</td>
+    <td>Takes a certain amount of flowers from someone.</td>
+    <td>$take 1 "@someguy"</td>
+      </tr>
+      <tr class="active">
+<td>!!destroy,!!d</td>
+<td>Completely stops the music and unbinds the bot from the channel. (may cause weird behaviour)</td>
+<td>!!d</td>
+</tr>
+      <tr class="active">
+<td>!!move,!!mv</td>
+<td>Moves the bot to your voice channel. (works only if music is already playing)</td>
+<td>!!mv</td>
+</tr>
+      <tr class="active">
+<td>!!cleanup</td>
+<td>Cleans up hanging voice connections.</td>
+<td>!!cleanup</td>
+</tr>
+<tr class="active">
+<td>.logserver</td>
+<td>Toggles logging in this channel. Logs every message sent/deleted/edited on the server. <strong>Bot Owner Only!</strong></td>
+<td>.logserver</td>
+</tr>
+<tr class="active">
+<td>.logignore</td>
+<td>Toggles whether the .logserver command ignores this channel. Useful if you have hidden admin channel and public log channel. <strong>Bot Owner Only!</strong></td>
+<td>.logignore</td>
+</tr>
+      <tr class="active">
+<td>.rotateplaying,.ropl</td>
+<td>Toggles rotation of playing status of the dynamic strings you specified earlier. <strong>Bot Owner Only!</strong></td>
+<td>.ropl</td>
+</tr>
+<tr class="active">
+<td>.addplaying,.adpl</td>
+<td>Adds a specified string to the list of playing strings to rotate. Supported placeholders: %servers%, %users%, %playing%, %queued%, %trivia% <strong>Bot Owner Only!</strong></td>
+<td>.adpl</td>
+</tr>
+<tr class="active">
+<td>.listplaying,.lipl</td>
+<td>Lists all playing statuses with their corresponding number. <strong>Bot Owner Only!</strong></td>
+<td>.lipl</td>
+</tr>
+<tr class="active">
+<td>.removeplaying,.repl,.rmpl</td>
+<td>Removes a playing string on a given number. <strong>Bot Owner Only!</strong></td>
+<td>.rmpl</td>
+</tr>
+      <tr class="active">
+<td>.scsc</td>
+<td>Starts an instance of cross server channel. You will get a token as a DM that other people will use to tune in to the same instance. <strong>Bot Owner Only.</strong></td>
+<td>.scsc</td>
+</tr>
+<tr class="active">
+<td>.addcustreact,.acr</td>
+<td>Add a custom reaction. Guide here: <a href="https://github.com/Kwoth/NadekoBot/wiki/Custom-Reactions">https://github.com/Kwoth/NadekoBot/wiki/Custom-Reactions</a> <strong>Bot Owner Only!</strong></td>
+<td>.acr "hello" I love saying hello to %user%</td>
+</tr>
+<tr class="active">
+<td>.editcustreact,.ecr</td>
+<td>Edits a custom reaction, arguments are custom reactions name, index to change, and a (multiword) message <strong>Bot Owner Only</strong></td>
+<td>.ecr "%mention% disguise" 2 Test 123</td>
+</tr>
+<tr class="active">
+<td>.delcustreact,.dcr</td>
+<td>Deletes a custom reaction with given name (and index). <strong>Bot Owner Only.</strong></td>
+<td>.dcr index</td>
+</tr>
+<tr class="active">
+<td>.leave</td>
+<td>Makes Nadeko leave the server. Either name or id required. <strong>Bot Owner Only!</strong></td>
+<td>.leave 123123123331</td>
+</tr>
+<tr class="active">
+<td>.restart</td>
+<td>Restarts the bot. Might not work. <strong>Bot Owner Only</strong></td>
+<td>.restart</td>
+</tr>
+<tr class="active">
+<td>.heap</td>
+<td>Shows allocated memory - <strong>Bot Owner Only!</strong></td>
+<td>.heap</td>
+</tr>
+<tr class="active">
+<td>.die</td>
+<td>Shuts the bot down and notifies users about the restart. <strong>Bot Owner Only!</strong></td>
+<td>.die</td>
+</tr>
+<tr class="active">
+<td>.setname,.newnm</td>
+<td>Give the bot a new name. <strong>Bot Owner Only!</strong></td>
+<td>.newnm BotName</td>
+</tr>
+<tr class="active">
+<td>.newavatar,.setavatar</td>
+<td>Sets a new avatar image for the NadekoBot. Argument is a direct link to an image. <strong>Bot Owner Only!</strong></td>
+<td>.setavatar https://i.ytimg.com/vi/WDudkR1eTMM/maxresdefault.jpg</td>
+</tr>
+<tr class="active">
+<td>.setgame</td>
+<td>Sets the bots game. <strong>Bot Owner Only!</strong></td>
+<td>.setgame Playing with kwoth</td>
+</tr>
+<tr class="active">
+<td>.send</td>
+<td>Send a message to someone on a different server through the bot. <strong>Bot Owner Only!</strong></td>
+<td>.send serverid|u:user_id Send this to a user! or .send serverid|c:channel_id Send this to a channel!</td>
+</tr>
+<tr class="active">
+<td>.unstuck</td>
+<td>Clears the message queue. <strong>Bot Owner Only!</strong></td>
+<td>.unstuck</td>
+</tr>
+  <tr class="active">    
+<td>.announce</td>
+<td>Sends a message to all servers' general channel bot is connected to.<strong>Bot Owner Only!</strong></td>
+<td>.announce Useless spam</td>
+</tr>
+<tr class="active">
+<td>.savechat</td>
+<td>Saves a number of messages to a text file and sends it to you. <strong>Bot Owner Only</strong></td>
+<td>.savechat 150</td>
+</tr>
+<tr class="active">
+<td>.remindmsg</td>
+<td>Sets message for when the remind is triggered.  Available placeholders are %user% - user who ran the command, %message% - Message specified in the remind, %target% - target channel of the remind. <strong>Bot Owner Only!</strong></td>
+<td>.remindmsg do something else</td>
+</tr>
+    </tbody>
+  </table>
+    </div>
+  </div>
+ 
+<footer>
+  <div class='footer'>
+    <div class='container'>
+      <div class='col-md-3 copy'>
+        <div class='top1'>
+          <i class='ham'></i>
+        </div>
+        <div class='top2'>
+          <h6>&copy; GankStars Esports, LLC</h6>
+          <p>All rights reserved</p>
+        </div>
+        <div class='clearfix'>
+        </div>
+      </div>
+      <div class='col-md-3 copy'>
+        <div class='top1'>
+          <i class='men'></i>
+        </div>
+        <div class='top2'>
+          <h6>Email:</h6>
+          <p>gankstarsleague@gmail.com</p>
+        </div>
+        <div class='clearfix'>
+        </div>
+      </div>
+      <div class='col-md-3 copy'>
+        <div class='top1'>
+          <i class='app'></i>
+        </div>
+        <div class='top2'>
+          <h6>Phone: </h6>
+          <p>1-347-991-9558</p>
+        </div>
+        <div class='clearfix'> </div>
+      </div>
+      <div class='col-md-3 copy'>
+        <div class='top1'>
+          <i class='lik'></i>
+        </div>
+        <div class='top2'>
+          <h6>Follow us at: </h6>
+          <p><a href='http://band.us/#!/band/63193021' target='_blank'><img src='Band_Button.png' width='35' height='35'></a>
+        <a href='https://twitter.com/gankstars' target='_blank'><img src='Twitter-Logo.png' width='35' height='35'></a></p>
+        </div>
+  <div class='clearfix'></div>
+  </div>
+  <div class='clearfix'>
+  </div>
+  </div>
+</div>
+<br>
+<br>
+</footer>
+</body>
+</html>
